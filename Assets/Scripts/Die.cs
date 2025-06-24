@@ -21,5 +21,11 @@ public class Die : MonoBehaviour
         }
         Debug.Log("Die");
         Time.timeScale = 0f;
+
+        // Show end game panel
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ShowEndGamePanelPublic();
+        }
     }
 }

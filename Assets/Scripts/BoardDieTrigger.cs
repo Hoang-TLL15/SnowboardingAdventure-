@@ -23,5 +23,9 @@ public class BoardDieTrigger : MonoBehaviour
         }
         Debug.Log("Die");
         Time.timeScale = 0f;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ShowEndGamePanelPublic();
+        }
     }
 }

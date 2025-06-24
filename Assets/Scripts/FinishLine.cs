@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI; // Add this for GameObject reference
 
 public class FinishLine : MonoBehaviour
 {
@@ -40,6 +41,11 @@ public class FinishLine : MonoBehaviour
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.Finish();
+            }
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.ShowEndGamePanelPublic();
             }
 
             StartCoroutine(StopGameAfterDelay());

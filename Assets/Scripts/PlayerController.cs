@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float torqueAmount = 1f;
+    [SerializeField] float torqueAmount = 9f;
     [SerializeField] SurfaceEffector2D surfaceEffector;
     [SerializeField] float maxSpeed = 15f;
     [SerializeField] float minSpeed = -5f;
@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float downhillSpeed = 5f;
     [SerializeField] float uphillSpeed = -3f;
     [SerializeField] float flatSpeed = 0f;
-    [SerializeField] float slopeThreshold = 10f;
+    [SerializeField] float slopeThreshold = 12f;
     [SerializeField] float jumpForce = 8f;
     [SerializeField] float boostSpeed = 30f;
     [SerializeField] float boostDuration = 0.5f;
@@ -112,6 +112,11 @@ public class PlayerController : MonoBehaviour
             if (boostTimer <= 0f)
             {
                 isBoosting = false;
+                // If not grounded after boost, slow down to 0
+                if (!isGrounded)
+                {
+                    surfaceEffector.speed = 0f;
+                }
             }
         }
 
@@ -181,15 +186,9 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
         }
-
         isOnDownwardSlope = false;
-        // Ignore speed reset if boosting
-        if (!isPlayerControlling && !isBoosting)
-        {
-            surfaceEffector.speed = Mathf.MoveTowards(surfaceEffector.speed, 0f, speedStep * Time.deltaTime * 60f);
-        }
+        surfaceEffector.speed = 0f;
     }
-
     ContactPoint2D GetClosestContactPoint(ContactPoint2D[] contacts)
     {
         ContactPoint2D closest = contacts[0];
