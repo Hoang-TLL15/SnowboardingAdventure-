@@ -40,6 +40,19 @@ public class DustTrail : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+            if (dustParticles.isPlaying)
+            {
+                dustParticles.Stop();
+            }
+            return;
+        }
+
         if (surfaceEffector != null && isTouchingGround && !Mathf.Approximately(surfaceEffector.speed, 0f))
         {
             if (!dustParticles.isPlaying)

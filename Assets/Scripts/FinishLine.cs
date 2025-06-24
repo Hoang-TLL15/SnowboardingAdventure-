@@ -43,10 +43,7 @@ public class FinishLine : MonoBehaviour
                 GameManager.Instance.Finish();
             }
 
-            if (GameManager.Instance != null)
-            {
-                GameManager.Instance.ShowEndGamePanelPublic();
-            }
+            
 
             StartCoroutine(StopGameAfterDelay());
         }
@@ -56,5 +53,9 @@ public class FinishLine : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         Time.timeScale = 0f; // Dừng game
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ShowEndGamePanelPublic();
+        }
     }
 }
