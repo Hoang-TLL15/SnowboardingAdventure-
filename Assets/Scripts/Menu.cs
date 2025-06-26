@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject menuScreen;
     [SerializeField] private GameObject levelSelectPanel;
     [SerializeField] private GameObject instructionPanel;
+    [SerializeField] private GameObject shopPanel;
 
     [Header("Buttons")]
     [SerializeField] private Button showLevelButton;
@@ -16,6 +17,8 @@ public class Menu : MonoBehaviour
     [SerializeField] private Button iconButton;
     [SerializeField] private Button backButton;
     [SerializeField] private Button soundOnButton;
+    [SerializeField] private Button shopButton;
+    [SerializeField] private Button quitShopButton;
 
     [Header("Level Buttons")]
     [SerializeField] private Button level1Button;
@@ -53,6 +56,10 @@ public class Menu : MonoBehaviour
         backButton.onClick.AddListener(OnBack);
         if (soundOnButton != null)
             soundOnButton.onClick.AddListener(OnSoundOn);
+        if (shopButton != null)
+            shopButton.onClick.AddListener(OnShop);
+        if (quitShopButton != null)
+            quitShopButton.onClick.AddListener(OnQuitShop);
 
         // Level buttons
         if (level1Button != null)
@@ -70,6 +77,8 @@ public class Menu : MonoBehaviour
         menuScreen.SetActive(true);
         levelSelectPanel.SetActive(false);
         instructionPanel.SetActive(false);
+        if (shopPanel != null)
+            shopPanel.SetActive(false);
 
         // Check saved sound state
         bool soundOn = PlayerPrefs.GetInt("SoundOn", 1) == 1;
@@ -154,6 +163,20 @@ public class Menu : MonoBehaviour
     private void OnBack()
     {
         instructionPanel.SetActive(false);
+        menuScreen.SetActive(true);
+    }
+
+    private void OnShop()
+    {
+        menuScreen.SetActive(false);
+        if (shopPanel != null)
+            shopPanel.SetActive(true);
+    }
+
+    private void OnQuitShop()
+    {
+        if (shopPanel != null)
+            shopPanel.SetActive(false);
         menuScreen.SetActive(true);
     }
 }

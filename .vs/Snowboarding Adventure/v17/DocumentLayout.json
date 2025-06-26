@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\tai lieu\\Snowboarding Adventure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|d:\\tai lieu\\snowboarding adventure\\assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|d:\\tai lieu\\snowboarding adventure\\assets\\scripts\\boarddietrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boarddietrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|D:\\tai lieu\\Snowboarding Adventure\\assets\\scripts\\die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|d:\\tai lieu\\snowboarding adventure\\assets\\scripts\\die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|D:\\tai lieu\\Snowboarding Adventure\\assets\\scripts\\dusttrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dusttrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|d:\\tai lieu\\snowboarding adventure\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|D:\\tai lieu\\Snowboarding Adventure\\assets\\scripts\\skinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|D:\\tai lieu\\Snowboarding Adventure\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE87A468-0BF2-B610-FE3E-29E3EA6325FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,52 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FinishLine.cs",
-              "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\FinishLine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FinishLine.cs",
-              "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\FinishLine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FinishLine.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T15:16:35.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Die.cs",
               "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\Die.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Die.cs",
               "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\Die.cs",
               "RelativeToolTip": "Assets\\Scripts\\Die.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:52:49.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DustTrail.cs",
-              "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\DustTrail.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DustTrail.cs",
-              "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\DustTrail.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DustTrail.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAewCoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:51:49.586Z"
+              "WhenOpened": "2025-06-26T15:55:27.17Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BoardDieTrigger.cs",
-              "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\BoardDieTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BoardDieTrigger.cs",
-              "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\BoardDieTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BoardDieTrigger.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwCwAAAA0AAAAAAAAAA==",
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAASwD8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:13:47.067Z",
+              "WhenOpened": "2025-06-26T15:27:01.335Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\Menu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu.cs",
+              "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\Menu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAUwKkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T15:19:41.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkinManager.cs",
+              "DocumentMoniker": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\SkinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SkinManager.cs",
+              "ToolTip": "D:\\tai lieu\\Snowboarding Adventure\\Assets\\Scripts\\SkinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SkinManager.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwFAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T15:07:17.209Z"
             }
           ]
         }

@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource backgroundMusic; // Assign in Inspector or via code
 
+    [Header("Player Skins")]
+    [SerializeField] private GameObject playerParent; // Assign the "Player" GameObject in Inspector
+
     private string HighScoreFilePath => Path.Combine(Application.persistentDataPath, $"highscore_{GetStageName()}.json");
 
     [System.Serializable]
@@ -64,6 +67,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        // Activate the correct player skin based on PlayerPrefs
+        ActivateSelectedPlayer();
+
         // Check PlayerPrefs for sound state (set by Menu)
         if (backgroundMusic != null)
         {
@@ -271,5 +277,19 @@ public class GameManager : MonoBehaviour
     {
         // Example: use the current scene name as the stage identifier
         return UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+    }
+
+    private void ActivateSelectedPlayer()
+    {
+        if (playerParent == null) return;
+
+        int selectedSkin = PlayerPrefs.GetInt("SelectedSkin", 0); // Default to 0 (Player1)
+        int childCount = playerParent.transform.childCount;
+
+        for (int i = 0; i < childCount; i++)
+        {
+            var child = playerParent.transform.GetChild(i).gameObject;
+            child.SetActive(i == selectedSkin);
+        }
     }
 }
