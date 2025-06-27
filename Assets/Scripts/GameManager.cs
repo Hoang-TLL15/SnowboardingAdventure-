@@ -283,13 +283,20 @@ public class GameManager : MonoBehaviour
     {
         if (playerParent == null) return;
 
-        int selectedSkin = PlayerPrefs.GetInt("SelectedSkin", 0); // Default to 0 (Player1)
         int childCount = playerParent.transform.childCount;
+        int selectedSkin = Mathf.Clamp(PlayerPrefs.GetInt("SelectedSkin", 0), 0, childCount - 2); // Exclude Dust
 
         for (int i = 0; i < childCount; i++)
         {
             var child = playerParent.transform.GetChild(i).gameObject;
-            child.SetActive(i == selectedSkin);
+            if (child.name == "Dust")
+            {
+                child.SetActive(true); // Always keep Dust active
+            }
+            else
+            {
+                child.SetActive(i == selectedSkin);
+            }
         }
     }
 }

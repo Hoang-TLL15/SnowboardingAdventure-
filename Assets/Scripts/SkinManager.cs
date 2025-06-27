@@ -119,6 +119,8 @@ public class SkinManager : MonoBehaviour
 
     public bool SelectSkin(int skinIndex)
     {
+        if (skinIndex < 0 || skinIndex >= SkinCount)
+            return false;
         if (IsSkinUnlocked(skinIndex))
         {
             PlayerPrefs.SetInt("SelectedSkin", skinIndex);
